@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Proyectos</title>
+    <link rel="stylesheet" href="stylesAplicacion.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="navbar">
+                <h2>Gestión de Proyectos</h2>
+                <div class="user-menu">
+                    <img id="user-icon" src="imagenes/userGris.png" alt="Usuario" class="user-icon">
+                    <div id="dropdown-menu" class="dropdown">
+                        <button>Opción 1</button>
+                        <button>Opción 2</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="task-form">
+            <h3>Crear nueva tarea</h3>
+            <form>
+                <input type="text" placeholder="Título" required>
+                <textarea placeholder="Descripción" required></textarea>
+                <select required>
+                    <option value="" disabled selected>Prioridad</option>
+                    <option value="alta">Alta</option>
+                    <option value="media">Media</option>
+                    <option value="baja">Baja</option>
+                    <option value="sin-prioridad">Sin prioridad</option>
+                </select>
+                <button type="submit">Agregar Tarea</button>
+            </form>
+        </section>
+
+        <section class="task-board">
+            <div class="column">
+                <h3>To Do</h3>
+                <div class="task-card">
+                    <h4>Tarea 1</h4>
+                    <p>Descripción de la tarea</p>
+                </div>
+            </div>
+
+            <div class="column">
+                <h3>In Progress</h3>
+                <div class="task-card">
+                    <h4>Tarea 2</h4>
+                    <p>Descripción de la tarea</p>
+                </div>
+            </div>
+
+            <div class="column">
+                <h3>Done</h3>
+                <div class="task-card">
+                    <h4>Tarea 3</h4>
+                    <p>Descripción de la tarea</p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+<script src="scriptPrincipal.js"></script>
+
+</html>
